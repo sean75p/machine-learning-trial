@@ -10,7 +10,8 @@ def matrix_multiplication(X, Y):
     # i.e. x_column must equal y_rows
 
     if x_columns != y_rows:
-        raise Exception("This matrix multiplication is not possible.")
+        raise Exception("This matrix multiplication is not possible.\n"
+                        "The columns and rows do not match")
 
     #create an empty list of lists to initialize matrix to all zeros
     result = [[0 for i in range(y_columns)] for j in range(x_rows)]
@@ -41,5 +42,10 @@ if __name__=="__main__":
     # result = [[0, 0, 0, 0],
     #           [0, 0, 0, 0],
     #           [0, 0, 0, 0]]
+
+    print(matrix_multiplication(X,Y))
+
+    Y = [[5, 8, 1, 2],
+         [4, 5, 9, 1]]
 
     print(matrix_multiplication(X,Y))
