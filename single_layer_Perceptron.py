@@ -2,6 +2,7 @@
 
 def predict(inputs, weights):
     """
+    function to predict the output based on inputs and weights
     :param inputs: <list>
     :param weights: <list>
     :return: boolean
@@ -76,4 +77,4 @@ if __name__ == "__main__":
     l_rate = 0.1
     n_epoch = 5
     weights = train_weights(dataset, l_rate, n_epoch)
-    print('weights:', weights)
+    print('bias and weights:', weights)
